@@ -15,7 +15,7 @@ jobs:
           node-version: "12.x"
       - run: npm install
       - run: npm run build
-      - uses: netlify/sctions/cli@master
+      - uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKENS }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
